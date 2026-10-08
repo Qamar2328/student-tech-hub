@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Student Tech Hub</title>
+
+    <style>
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f6f8;
+            color: #222;
+            line-height: 1.6;
+        }
+
+        /* Navigation Menu */
+
+        .navbar {
+            background-color: #1f2937;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 8%;
+        }
+
+        .logo {
+            color: white;
+            font-size: 25px;
+            font-weight: bold;
+        }
+
+        .nav-links {
+            display: flex;
+            list-style: none;
+            gap: 25px;
+        }
+
+        .nav-links a {
+            color: white;
+            text-decoration: none;
+            font-size: 16px;
+        }
+
+        .nav-links a:hover {
+            color: #60a5fa;
+        }
+
+        /* Hero Section */
+
+        .hero {
+            background-color: #2563eb;
+            color: white;
+            min-height: 350px;
+
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+            text-align: center;
+            padding: 40px 20px;
+        }
+
+        .hero h1 {
+            font-size: 42px;
+            margin-bottom: 15px;
+        }
+
+        .hero p {
+            max-width: 700px;
+            font-size: 18px;
+        }
+
+        /* Main Container */
+
+        .container {
+            width: 85%;
+            max-width: 1200px;
+            margin: 40px auto;
+        }
+
+        .section-title {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        /* Flexbox Cards */
+
+        .cards {
+            display: flex;
+            justify-content: space-between;
+            align-items: stretch;
+            gap: 25px;
+            flex-wrap: wrap;
+        }
+
+        .card {
+            background-color: white;
+            flex: 1 1 300px;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+        }
+
+        .card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .card-content {
+            padding: 20px;
+        }
+
+        .card-content h3 {
+            margin-bottom: 10px;
+            color: #2563eb;
+        }
+
+        /* Information Section */
+
+        .info-section {
+            background-color: white;
+            padding: 30px;
+            margin-top: 40px;
+            border-radius: 10px;
+        }
+
+        .info-section h2 {
+            margin-bottom: 15px;
+            color: #2563eb;
+        }
+
+        .info-section ul {
+            margin-left: 25px;
+        }
+
+        /* Footer */
+
+        footer {
+            background-color: #1f2937;
+            color: white;
+            text-align: center;
+            padding: 25px;
+            margin-top: 40px;
+        }
+
+        /* Responsive Design */
+
+        @media (max-width: 768px) {
+
+            .navbar {
+                flex-direction: column;
+                gap: 15px;
+            }
+
+            .nav-links {
+                flex-direction: column;
+                align-items: center;
+                gap: 10px;
+            }
+
+            .hero h1 {
+                font-size: 32px;
+            }
+
+            .cards {
+                flex-direction: column;
+            }
+
+            .card {
+                width: 100%;
+            }
+        }
+
+        @media (max-width: 480px) {
+
+            .container {
+                width: 92%;
+            }
+
+            .hero h1 {
+                font-size: 27px;
+            }
+
+            .hero p {
+                font-size: 15px;
+            }
+
+            .info-section {
+                padding: 20px;
+            }
+        }
+
+    </style>
+
+</head>
+
+
+<body>
+
+    <!-- Navigation Menu -->
+
+    <nav class="navbar">
+
+        <div class="logo">
+            Student Tech Hub
+        </div>
+
+        <ul class="nav-links">
+
+            <li>
+                <a href="#home">Home</a>
+            </li>
+
+            <li>
+                <a href="#topics">Topics</a>
+            </li>
+
+            <li>
+                <a href="#flexbox">Flexbox</a>
+            </li>
+
+            <li>
+                <a href="#responsive">Responsive</a>
+            </li>
+
+            <li>
+                <a href="#about">About</a>
+            </li>
+
+        </ul>
+
+    </nav>
+
+
+    <!-- Hero Section -->
+
+    <section class="hero" id="home">
+
+        <h1>
+            Welcome to Student Tech Hub
+        </h1>
+
+        <p>
+            Learn about modern web design and understand
+            how CSS Flexbox creates flexible and responsive layouts.
+        </p>
+
+    </section>
+
+
+    <!-- Topics -->
+
+    <main class="container" id="topics">
+
+        <h2 class="section-title">
+            Technology Topics
+        </h2>
+
+
+        <div class="cards">
+
+
+            <div class="card">
+
+                <img
+                    src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=800&q=80"
+                    alt="Web Development">
+
+                <div class="card-content">
+
+                    <h3>
+                        Web Development
+                    </h3>
+
+                    <p>
+                        Web development involves creating and designing
+                        websites using technologies such as HTML and CSS.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div class="card">
+
+                <img
+                    src="https://images.unsplash.com/photo-1515879218367-8466d910aaa4?auto=format&fit=crop&w=800&q=80"
+                    alt="Programming">
+
+                <div class="card-content">
+
+                    <h3>
+                        Programming
+                    </h3>
+
+                    <p>
+                        Programming is the process of creating instructions
+                        that computers can understand and execute.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div class="card">
+
+                <img
+                    src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&w=800&q=80"
+                    alt="Computer Networking">
+
+                <div class="card-content">
+
+                    <h3>
+                        Computer Networking
+                    </h3>
+
+                    <p>
+                        Computer networking connects devices so they can
+                        communicate and share information.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+        </div>
+
+
+        <!-- Flexbox Explanation -->
+
+        <section class="info-section" id="flexbox">
+
+            <h2>
+                How Flexbox is Used
+            </h2>
+
+            <p>
+                CSS Flexbox is a layout system used to arrange elements
+                in rows or columns. In this webpage, Flexbox is used
+                for the navigation menu and technology cards.
+            </p>
+
+            <br>
+
+            <ul>
+
+                <li>
+                    <b>display: flex;</b>
+                    creates a Flexbox container.
+                </li>
+
+                <li>
+                    <b>justify-content</b>
+                    controls the arrangement of items.
+                </li>
+
+                <li>
+                    <b>align-items</b>
+                    controls the alignment of items.
+                </li>
+
+                <li>
+                    <b>gap</b>
+                    creates space between items.
+                </li>
+
+                <li>
+                    <b>flex-wrap</b>
+                    allows items to move to another line.
+                </li>
+
+                <li>
+                    <b>flex-direction</b>
+                    changes the direction of items.
+                </li>
+
+            </ul>
+
+        </section>
+
+
+        <!-- Responsive Design -->
+
+        <section class="info-section" id="responsive">
+
+            <h2>
+                Responsive Web Design
+            </h2>
+
+            <p>
+                Responsive web design allows a webpage to adjust
+                according to different screen sizes such as desktops,
+                tablets and mobile phones.
+            </p>
+
+            <br>
+
+            <p>
+                In this webpage, media queries are used to change
+                the Flexbox layout when the screen becomes smaller.
+                On a desktop, cards appear next to each other.
+                On a mobile device, cards appear vertically.
+            </p>
+
+        </section>
+
+
+        <!-- About -->
+
+        <section class="info-section" id="about">
+
+            <h2>
+                Flexbox Features
+            </h2>
+
+            <ul>
+
+                <li>
+                    <b>display: flex</b> - creates a Flexbox layout.
+                </li>
+
+                <li>
+                    <b>flex-direction</b> - controls row or column direction.
+                </li>
+
+                <li>
+                    <b>justify-content</b> - controls main-axis alignment.
+                </li>
+
+                <li>
+                    <b>align-items</b> - controls cross-axis alignment.
+                </li>
+
+                <li>
+                    <b>gap</b> - adds space between items.
+                </li>
+
+                <li>
+                    <b>flex-wrap</b> - allows items to move to another line.
+                </li>
+
+            </ul>
+
+        </section>
+
+
+    </main>
+
+
+    <!-- Footer -->
+
+    <footer>
+
+        <p>
+            © 2026 Student Tech Hub | HTML & CSS Flexbox Assignment
+        </p>
+
+    </footer>
+
+
+</body>
+
+</html>
